@@ -35,22 +35,22 @@ Esta biblioteca oferece alguns métodos que facilitam a comunicação com a API 
 <h1>Exemplos</h1>
 
 ```csharp
-var yahooFinanceClient = new YahooFinance.YahooFinance();
-var apple = yahooFinanceClient.RetrieveStock("AAPL");
+var yf = new yf.YahooFinance();
+var ativo = yahooFinanceClient.RetrieveStock("BBSA3.SA");
 
-Console.WriteLine($"Preço Ask é {apple.PricingData.Ask}");
-Console.WriteLine($"Preço Bid é {apple.PricingData.Bid}");
-Console.WriteLine($"Preço de Abertura é {apple.PricingData.Open}");
-Console.WriteLine($"Preço de Fechamento Anterior é {apple.PricingData.PreviousClose}");
+Console.WriteLine($"Preço Ask é {ativo.PricingData.Ask}");
+Console.WriteLine($"Preço Bid é {ativo.PricingData.Bid}");
+Console.WriteLine($"Preço de Abertura é {ativo.PricingData.Open}");
+Console.WriteLine($"Preço de Fechamento Anterior é {ativo.PricingData.PreviousClose}");
 ```
 
 ```csharp
-var yahooFinanceClient = new YahooFinance.YahooFinance();
-var apple = yahooFinanceClient.RetrieveStock("AAPL");
+var yf = new yf.YahooFinance();
+var ativo = yahooFinanceClient.RetrieveStock("PETR4.SA");
 
-Console.WriteLine($"Volume é {apple.VolumeData.CurrentVolume}");
-Console.WriteLine($"Tamanho do Ask é {apple.VolumeData.AskSize}");
-Console.WriteLine($"Tamanho do Bid é {apple.VolumeData.BidSize}");
-Console.WriteLine($"Tamanho da Última Negociação é {apple.VolumeData.LastTradeSize}");
-Console.WriteLine($"Volume Diário Médio é {apple.VolumeData.AverageDailyVolume}");
+Console.WriteLine($"Volume é {ativo.VolumeData.CurrentVolume}");
+Console.WriteLine($"Tamanho do Ask é {ativo.VolumeData.AskSize}");
+Console.WriteLine($"Tamanho do Bid é {ativo.VolumeData.BidSize}");
+Console.WriteLine($"Tamanho da Última Negociação é {ativo.VolumeData.LastTradeSize}");
+Console.WriteLine($"Volume Diário Médio é {ativo.VolumeData.AverageDailyVolume}");
 ```
