@@ -1,5 +1,3 @@
-Claro! Aqui está o README atualizado para português:
-
 # YahooFinanceAPI
 Biblioteca cliente C# para a API do Yahoo Finance.
 
