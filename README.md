@@ -36,7 +36,7 @@ Esta biblioteca oferece alguns métodos que facilitam a comunicação com a API 
 
 ```csharp
 var yf = new yf.YahooFinance();
-var ativo = yahooFinanceClient.RetrieveStock("BBSA3.SA");
+var ativo = yf.RetrieveStock("BBSA3.SA");
 
 Console.WriteLine($"Preço Ask é {ativo.PricingData.Ask}");
 Console.WriteLine($"Preço Bid é {ativo.PricingData.Bid}");
@@ -46,7 +46,7 @@ Console.WriteLine($"Preço de Fechamento Anterior é {ativo.PricingData.Previous
 
 ```csharp
 var yf = new yf.YahooFinance();
-var ativo = yahooFinanceClient.RetrieveStock("PETR4.SA");
+var ativo = yf.RetrieveStock("PETR4.SA");
 
 Console.WriteLine($"Volume é {ativo.VolumeData.CurrentVolume}");
 Console.WriteLine($"Tamanho do Ask é {ativo.VolumeData.AskSize}");
